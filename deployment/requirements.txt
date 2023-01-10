@@ -55,3 +55,4 @@ yarg==0.1.9
 zipp==3.11.0
 pickle-mixin
 opencv-python-headless
+opencv_python
