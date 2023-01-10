@@ -56,4 +56,3 @@ zipp==3.11.0
 pickle-mixin
 opencv-python-headless
 opencv_python
-python==3.11.1
