@@ -69,8 +69,8 @@ if st.button('Predict Probability'):
         currentrunrate = score/overs
     except(ZeroDivisionError):
         st.error("THIS APP IS TO PREDICT THE PROBABITY OF 2ND INNINGS ")
-        st.error("THIS NOT THE THE CORRECT PREDICTION ")
-        currentrunrate = 0
+        break
+
     requiredrunrate = (runs_left*6)/balls_left
 
     input_df = pd.DataFrame({'batting_team': [battingteam], 'bowling_team': [bowlingteam], 'city': [city], 'runs_left': [runs_left], 'balls_left': [
