@@ -69,7 +69,7 @@ if st.button('Predict Probability'):
         currentrunrate = score/overs
     except(ZeroDivisionError):
         st.error("THIS APP IS TO PREDICT THE PROBABITY OF 2ND INNINGS ")
-        break
+        currentrunrate=0
 
     requiredrunrate = (runs_left*6)/balls_left
 
