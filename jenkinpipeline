@@ -3,6 +3,9 @@ pipeline {
 
     stages {
         stage('Checkout') {
+checkout scmGit(
+    branches: [[name: 'master']],
+    userRemoteConfigs: [[url: 'https://github.com/jenkinsci/git-plugin.git']])
             steps {
                 // Checkout your source code from version control
                 // For example, if you're using Git:
